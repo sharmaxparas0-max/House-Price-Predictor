@@ -1,0 +1,118 @@
+# 🏠 House Price Predictor
+
+A machine learning web application that predicts house prices based on property features such as area, number of bedrooms, bathrooms, stories, parking, and furnishing status.
+
+## 🚀 Project Overview
+
+This project uses a Linear Regression model to estimate house prices from housing data. It includes data preprocessing, exploratory data analysis, feature engineering, model training, and evaluation.
+
+The application is built with Streamlit to provide an interactive interface for making house price predictions.
+
+## ✨ Features
+
+- Predict house prices using property characteristics.
+- Perform data preprocessing and feature engineering.
+- Handle categorical features using encoding techniques.
+- Train a Linear Regression model using Scikit-learn.
+- Evaluate model performance using regression metrics.
+- Provide an interactive web interface with Streamlit.
+
+## 🛠️ Technologies Used
+
+- **Programming Language:** Python
+- **Data Analysis:** Pandas, NumPy
+- **Machine Learning:** Scikit-learn
+- **Data Visualization:** Matplotlib, Seaborn (if used)
+- **Web Application:** Streamlit
+- **Model Serialization:** Joblib or Pickle
+
+## 📊 Dataset
+
+The project uses housing data containing property-related features, including:
+
+- Area
+- Bedrooms
+- Bathrooms
+- Stories
+- Main road access
+- Guest room availability
+- Basement
+- Hot water heating
+- Air conditioning
+- Parking spaces
+- Preferred area
+- Furnishing status
+
+The target variable is the house price.
+
+## 🤖 Machine Learning Workflow
+
+1. Load and explore the housing dataset.
+2. Clean the data and handle missing values, if present.
+3. Encode categorical variables.
+4. Split the dataset into training and testing sets.
+5. Train a Linear Regression model.
+6. Evaluate predictions using MAE, MSE, RMSE, and R² score.
+7. Integrate the model into a Streamlit application.
+
+## 📈 Model Performance
+
+The model was evaluated using standard regression metrics.
+
+- **R² Score:** Approximately 0.653
+- **MAE:** Approximately 970,043
+- **RMSE:** Approximately 1,324,507
+
+These are previously calculated results and should be verified against the final saved model before publication. The R² score indicates that the model explains approximately 65.3% of the variance in the test data.
+
+## 📂 Project Structure
+
+```text
+House-Price-Predictor/
+├── app.py
+├── housing.csv
+├── house_price_model.pkl
+├── requirements.txt
+└── README.md
+```
+
+*Note: Adjust the filenames above to match the actual files in your repository.*
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd House-Price-Predictor
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+If you do not have a `requirements.txt` file, install the required packages:
+
+```bash
+pip install streamlit pandas numpy scikit-learn joblib
+```
+
+### 3. Run the application
+
+```bash
+streamlit run app.py
+```
+
+Replace `app.py` with the actual name of your Streamlit application file.
+
+## 🔮 Future Improvements
+
+- Improve prediction accuracy through feature engineering and model comparison.
+- Experiment with Ridge Regression and other suitable regression models.
+- Improve the user interface and prediction visualizations.
+- Deploy the application using Streamlit Community Cloud.
+
+## 👨‍💻 Author
+
